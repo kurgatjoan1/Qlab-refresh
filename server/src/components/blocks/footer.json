@@ -1,0 +1,63 @@
+{
+  "collectionName": "components_blocks_footers",
+  "info": {
+    "displayName": "footer"
+  },
+  "options": {},
+  "attributes": {
+    "logo": {
+      "type": "component",
+      "component": "elements.logo",
+      "repeatable": false
+    },
+    "mission": {
+      "type": "string"
+    },
+    "home": {
+      "type": "component",
+      "component": "elements.link",
+      "repeatable": false
+    },
+    "aboutUs": {
+      "type": "component",
+      "component": "elements.link",
+      "repeatable": false
+    },
+    "newsBlogs": {
+      "type": "component",
+      "component": "elements.link",
+      "repeatable": false
+    },
+    "partner": {
+      "type": "component",
+      "component": "elements.link",
+      "repeatable": false
+    },
+    "contactUs": {
+      "type": "component",
+      "component": "elements.link",
+      "repeatable": false
+    },
+    "startUps": {
+      "type": "component",
+      "component": "elements.link",
+      "repeatable": false
+    },
+    "instagram": {
+      "type": "component",
+      "component": "elements.link",
+      "repeatable": false
+    },
+    "facebook": {
+      "type": "component",
+      "component": "elements.link",
+      "repeatable": false
+    },
+    "linkedIn": {
+      "type": "component",
+      "component": "elements.link",
+      "repeatable": false
+    }
+  },
+  "config": {}
+}

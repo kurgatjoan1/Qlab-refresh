@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_blocks_info_section_without_titles",
+  "info": {
+    "displayName": "info section without title"
+  },
+  "options": {},
+  "attributes": {
+    "description1": {
+      "type": "richtext"
+    },
+    "cta": {
+      "type": "component",
+      "component": "elements.link",
+      "repeatable": false
+    },
+    "bgImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    }
+  },
+  "config": {}
+}

@@ -1,13 +1,23 @@
 // src/components/HeroSection.tsx
 import Image from 'next/image';
 import { Menu } from 'lucide-react';
+import { HeroSectionBlock } from '@/types';
+import { getStrapiImageUrl, getImageAlt } from '@/lib/strapi';
 
-export default function HeroSection() {
+interface HeroSectionProps {
+  data: HeroSectionBlock;
+}
+
+export default function HeroSection({ data }: HeroSectionProps) {
+  const backgroundImageUrl = getStrapiImageUrl(data.backgroundImage.url);
+  const logoImageUrl = getStrapiImageUrl(data.logo.image.url);
+  const logoAlt = getImageAlt(data.logo.image.alternativeText, data.logo.text);
+
   return (
     <section 
       className="relative min-h-screen w-full bg-no-repeat bg-center bg-cover flex items-center"
       style={{
-        backgroundImage: "url('/Rectangle 132.svg')",
+        backgroundImage: `url('${backgroundImageUrl}')`,
         backgroundSize: 'cover',
         backgroundPosition: 'center center',
         backgroundRepeat: 'no-repeat',
@@ -29,13 +39,13 @@ export default function HeroSection() {
             {/* Logo - Positioned at 3/4 of screen height */}
             <div className="flex items-center">
               <Image
-                src="/qlab logo.png"
-                alt="Qlab Logo"
+                src={logoImageUrl}
+                alt={logoAlt}
                 width={140}
                 height={50}
                 className="h-10 w-auto md:h-12 lg:h-14"
                 priority
-                 style={{
+                style={{
                   filter: 'brightness(0) invert(1)',
                 }}
               />
