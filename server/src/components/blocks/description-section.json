@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_blocks_description_sections",
+  "info": {
+    "displayName": "Description Section"
+  },
+  "options": {},
+  "attributes": {
+    "bussinessModel1": {
+      "type": "richtext"
+    },
+    "description": {
+      "type": "text"
+    },
+    "mission": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

@@ -1,0 +1,28 @@
+{
+  "kind": "singleType",
+  "collectionName": "home_pages",
+  "info": {
+    "singularName": "home-page",
+    "pluralName": "home-pages",
+    "displayName": "HomePage"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "blocks": {
+      "type": "dynamiczone",
+      "components": [
+        "blocks.women-s-section",
+        "blocks.meet-the-team-section",
+        "blocks.info-section-without-title",
+        "blocks.info-section-with-title",
+        "blocks.hero-section",
+        "blocks.footer",
+        "blocks.description-section",
+        "blocks.contact-us"
+      ]
+    }
+  }
+}
